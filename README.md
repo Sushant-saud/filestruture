@@ -4,10 +4,10 @@ The src folder contains all the source files for your Next.js app .It’s where 
 
 ### Overview Folder structure
 
-**App:** Contains code (components, business logic, types) that is being used  
- by the special pages/\_app.tsx Next.js file.
-**Common:** Contains everything that cannot be categorized as a module.
-**Layouts:** Contains the layouts used by pages.
+**App:** Contains code (components, business logic, types) that is being used <br> 
+ by the special pages/\_app.tsx Next.js file.<br> 
+**Common:** Contains everything that cannot be categorized as a module.<br> 
+**Layouts:** Contains the layouts used by pages.<br> 
 
     1.  Core
     Contains reusable/extendable code (components, business logic, data fetching) used by other layouts.
