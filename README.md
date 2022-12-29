@@ -98,29 +98,33 @@ To display a custom error page in case of a 5XX HTTP error you can use the _erro
          </Link>
               </>
          }
-         Because this is just like any other page component in Next.js, you can add whatever styling, links, data,
-         or copy you'd like.For other errors, you can do the exact same thing with an _error.js file in the pages/ directory! The 404 error
-         is special because it is always statically generated, but the others rely on the server.
+           Because this is just like any other page component in Next.js, you can add whatever styling,
+           links, data,or copy you'd like.For other errors, you can do the exact same thing with an 
+          _error.js file in the pages/ directory! The 404 error is special because it is always statically      generated, but the others rely on the server.
         
         3. error.js
-         The _document.js is a special file which will only be used Server Side to render the basic HTML of the application.
-         The _error.js is a special file which will be used to customize the Next.js error page.
+            The _document.js is a special file which will only be used Server Side to render the basic
+            HTML of the   application. The _error.js is a special file which will be used to customize 
+            the Next.js error page.
 
         4. _document.js 
-         The _document.js is a special file which will only be used Server Side to render the basic HTML of the application.
+             The _document.js is a special file which will only be used Server Side to render the basic
+             HTML of the application.
 
         5. _api.tsx
-         Any file inside the folder pages/api is mapped to /api/* and will be treated as an API endpoint instead of a page. They are server-side 
-         only bundles and won't increase your client-side bundle size.
-         For example, the following API route pages/api/login.js returns a json response with a status code of 200:
-         export default function handler(req, res)
+            Any file inside the folder pages/api is mapped to /api/* and will be treated as an API endpoint 
+            instead of a page. They are server-side 
+            only bundles and won't increase your client-side bundle size.
+            For example, the following API route pages/api/login.js returns a json response with a status code of 200:
+            export default function handler(req, res)
             {
                  res.status(200).json({ name: 'John Doe' })
             }
 
         
   ### Public
-         Next.js uses this directory to statically serve files like the robots.txt or the favicon.ico. You will get more information on how to include 
+         Next.js uses this directory to statically serve files like the robots.txt or
+         the favicon.ico. You will get more information on how to include 
          these files in the official docs.   
  ###  Styles
  The styles directory is an addition to the scss files you have in each component directory. I like to place all my global and componentlevel styles like variables or utilities in this directory.
